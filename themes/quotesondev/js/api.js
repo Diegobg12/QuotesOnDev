@@ -12,14 +12,14 @@
       }
       ).done(function(data) {
         event.preventDefault();
+        var author = data[0].title.rendered;
+        var slug =  data[0].slug;
+        var content = data[0].content.rendered;
+        history.pushState(null, null, slug);
 
-        console.log(slug);
-        // $(".author").text(" ");
-        // $(".author").text(data.);
-
-        console.log(data)
-
-
+        $('.entry-title').text(author);
+        $('.entry-content').html(content);
+      
       });
     });
   })(jQuery);
