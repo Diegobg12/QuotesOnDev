@@ -39,6 +39,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## All Archives Page
 	## Submit a Quote Page
 --------------------------------------------------------------*/
+@import url(../../assets/styles.css);
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -229,8 +230,8 @@ button,
 input,
 select,
 textarea {
-  color: #404040;
-  font-family: sans-serif;
+  color: #ffffff;
+  font-family: "Exo", serif;
   font-size: 1rem;
   line-height: 1.5; }
 
@@ -292,7 +293,7 @@ html {
           box-sizing: inherit; }
 
 body {
-  background: #fff;
+  background: #212121;
   /* Fallback for when there is no custom background color defined. */ }
 
 blockquote,
@@ -411,11 +412,11 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
+  color: #00cc00; }
   a:visited {
-    color: purple; }
+    color: #00cc00; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #67a754; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -511,7 +512,7 @@ a {
     -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
             box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
     clip: auto !important;
-    color: #21759b;
+    color: #ffff;
     display: block;
     font-size: .875rem;
     font-weight: bold;
@@ -578,8 +579,11 @@ a {
   clear: both;
   margin: 0 0 1.5rem; }
 
+.entry-content p {
+  font-size: 16px; }
+
 html {
-  background-color: red; }
+  font-family: Exo; }
 
 /*--------------------------------------------------------------
 # Media

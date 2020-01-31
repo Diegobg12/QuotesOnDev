@@ -11,6 +11,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
+			
 
 			<?php if ( is_home() && ! is_front_page() ) : ?>
 				<header>
@@ -26,14 +27,14 @@ get_header(); ?>
 				$args = array( 'orderby' => 'rand', 'posts_per_page' => '1' );
 				$posts = get_posts( $args ); // returns an array of posts
 				// output the random post
-				while ( have_posts() ) : the_post();
-					echo '<span class="author">';
+				if ( have_posts() ) : the_post();
+					echo '<h1 class="entry-title">';
 					 the_title();
-					echo '</span>';
-					echo '<span class="quote">';
+					echo '</h1>';
+					echo '<div class="entry-content">';
 					the_content();
-					echo '</span>';
-				endwhile;
+					echo '</div>';
+				endif;
 				// Reset Post Data
 				wp_reset_postdata();
 			?>

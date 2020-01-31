@@ -15,6 +15,7 @@
         var author = data[0].title.rendered;
         var slug =  data[0].slug;
         var content = data[0].content.rendered;
+        history.pushState(null, null, " ");
         history.pushState(null, null, slug);
 
         $('.entry-title').text(author);
