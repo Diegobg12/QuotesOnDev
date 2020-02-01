@@ -1,5 +1,5 @@
 (function($) {
-  console.log(red_vars);
+  
     $('#close-comments').on('click', function(event) {
 
       event.preventDefault();
@@ -12,19 +12,32 @@
       }
       ).done(function(data) {
         event.preventDefault();
-        var author = data[0].title.rendered;
-        var slug =  data[0].slug;
-        var content = data[0].content.rendered;
-        history.pushState(null, null, " ");
+        let author = data[0].title.rendered;
+        let slug =  data[0].slug;
+        let content = data[0].content.rendered;
+        let source = data[0]._qod_quote_source;
+
+        // history.pushState(null, null, " ");
         history.pushState(null, null, slug);
 
-        $('.entry-title').text(author);
+        
+        console.log(data)
+
+        if ( source == ""){
+          $('.entry-title').text(author);
+        }else{
+          $('.entry-title').text(author+ ":" + source);
+        }
+        
         $('.entry-content').html(content);
       
       });
     });
   })(jQuery);
 
+  var pathArray = window.location.pathname.split('/');
+  var secondLevelLocation = pathArray[2];
+  console.log(secondLevelLocation);
 
 
-
+  
