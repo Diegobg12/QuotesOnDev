@@ -32,6 +32,9 @@
 
         if ( source == ""){
           $('.entry-title').text(author);
+        
+
+          
         }else{
           $('.entry-title').text(author+ ":" + source);
         }

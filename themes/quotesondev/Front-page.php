@@ -7,8 +7,12 @@
 
 get_header(); ?>
 
+<i class="fa fa-quote-left hide" aria-hidden="true"></i>
+<i class="fa fa-quote-right hide right" aria-hidden="true"></i>
+
+
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main home-page" role="main">
+		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
 			
@@ -19,7 +23,7 @@ get_header(); ?>
 				</header>
 			<?php endif; ?>
 
-			<p>
+		
 
 			
 			<?php
@@ -28,32 +32,30 @@ get_header(); ?>
 				$posts = get_posts( $args ); // returns an array of posts
 				// output the random post
 				if ( have_posts() ) : the_post();
-					
-					the_content();
-					
-					echo '<div class="entry-meta"><h2 class="entry-title">-';
-					the_title();
-					echo '</div></h2>';
-				endif;
-				// Reset Post Data
-				wp_reset_postdata();
-			?>
+				?>
+				<div class="entry-content"><?php the_content()?></div>
+				<div class="entry-meta"><h2 class="entry-title"><?php the_title();?></h2></div>
+				<?php
+					endif;
+					// Reset Post Data
+					wp_reset_postdata();
+				?>
 
 
 
 
-</p>
+
 		<?php else : ?>
 
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 		<?php endif; ?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
-	<div>
+		
+		<div class= buttom-container>
 			<a class="principal" href="" type="button" id="close-comments" type="submit">Show Me Another!</a>
 		</div>
+		</main><!-- #main -->
+	</div><!-- #primary -->
 
 <?php get_footer(); ?>

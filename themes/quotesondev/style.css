@@ -618,14 +618,6 @@ object {
   max-width: 100%; }
 
 /*--------------------------------------------------------------
-# Page Templates
---------------------------------------------------------------*/
-/* All Archives Page */
-/* Submit a Quote Page */
-.home-page p {
-  font-size: 20px; }
-
-/*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 .site-info {
@@ -637,9 +629,7 @@ object {
   margin: 4.5rem 0 3rem;
   font-size: 1rem; }
   .site-info p {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 100%;
-            flex: 0 1 100%;
+    width: 0 1 100%;
     line-height: 1; }
 
 .footer-navigation {
@@ -650,7 +640,7 @@ object {
   margin: 1rem 0 0 0;
   padding: 0; }
   .footer-navigation li {
-    border-right: 1px solid white;
+    border-right: 1px solid #ffffff;
     line-height: 1;
     padding: 0 1rem; }
     .footer-navigation li:first-child {
@@ -664,3 +654,60 @@ object {
 
 .site-header {
   margin-top: 3rem; }
+
+/*--------------------------------------------------------------
+# Page Templates
+--------------------------------------------------------------*/
+/* All Archives Page */
+/* Submit a Quote Page */
+.home-page p {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 100%;
+          flex: 0 1 100%;
+  font-size: 20px; }
+
+.hide {
+  display: none; }
+
+@media screen and (min-width: 620px) {
+  .site-info {
+    -ms-flex-wrap: no-wrap;
+        flex-wrap: no-wrap; }
+    .site-info p {
+      display: inline-block;
+      -ms-flex: 0 1 auto;
+      -webkit-box-flex: 0;
+              flex: 0 1 auto;
+      padding-left: 1rem; }
+  .footer-navigation li:last-child {
+    border-right: 1px solid #ffffff; }
+  .logo img {
+    width: 500px; } }
+
+@media screen and (min-width: 1080px) {
+  .logo img {
+    margin: 0 auto;
+    width: 700px; }
+  .site-info {
+    -ms-flex-pack: end;
+    -webkit-box-pack: end;
+            justify-content: flex-end; }
+  .principal {
+    margin: 0 auto; }
+  .entry-content p {
+    font-size: 2.5rem; }
+  .entry-meta .entry-title {
+    font-size: 1.3rem; }
+  .buttom-container {
+    text-align: center; }
+  .hide {
+    display: inline-block;
+    position: absolute;
+    left: -175px;
+    font-size: 125px;
+    color: #00cc00; }
+  .right {
+    left: 695px; }
+  .site-content {
+    margin: 4.5rem 175px 1.5rem;
+    position: relative; } }
