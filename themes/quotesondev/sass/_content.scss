@@ -32,14 +32,46 @@
 	margin: 0 0 $base__space-unit;
 }
 
+.blog{
 
-.entry-content{
 
-	p{
-		font-size: 16px;
+	.entry-content{
+		margin-top: 3rem;
+	}
+
+}
+
+body{
+	color: $color__text-main;
+    font-family: $font__main;
+    font-size: 1rem;
+	line-height: 1.5;
+	font-size: $font_size;
+	font-weight: lighter;
+}
+.entry-meta{
+	margin-bottom: 3rem;
+}
+
+.entry-meta{
+	.entry-title{
+		display: inline;
+		font-size: 1.04rem;
+		font-weight: 400;
+		margin-bottom: 0;
+		font-weight: lighter;
+		margin: 0%;
+		
 	}
 }
 
-html{
-	font-family: Exo;
+.entry-title{
+		margin-top: 3rem;
+	
+}
+.container {
+    margin: 0 auto;
+    max-width: 1080px;
+    padding: 2.5%;
+    width: 100%;
 }

@@ -6,7 +6,7 @@
 
 a {
 	color: $color__link;
-
+	text-decoration: none;
 	&:visited {
 		color: $color__link-visited;
 	}
@@ -33,7 +33,7 @@ a {
 	width: 100%;
 
 	ul {
-		display: none;
+
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
@@ -101,14 +101,6 @@ a {
 	display: block;
 }
 
-@media screen and (min-width: 768px) {
-	.menu-toggle {
-		display: none;
-	}
-	.main-navigation ul {
-		display: block;
-	}
-}
 
 .comment-navigation,
 .posts-navigation,
@@ -140,3 +132,8 @@ a {
 .request:visited{
 	color: white;
 }
+
+
+
+
+

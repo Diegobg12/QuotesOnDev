@@ -10,15 +10,23 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-		<?php while ( have_posts() ) : the_post(); ?>
+		<?php while ( have_posts() ) : the_post(); 
+			echo '<p class="entry-content">';
+			the_content();
+			echo '</p>';
 
-			<?php get_template_part( 'template-parts/content', 'single' ); ?>
-
-			<?php the_post_navigation(); ?>
-
-		<?php endwhile; // End of the loop. ?>
+			echo '<div class="entry-meta"><h2 class="entry-title">-';
+			the_title();
+			echo '</div></h2>';
+	
+			 endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->
+
 	</div><!-- #primary -->
+
+		<div>
+			<a class="principal" href="" type="button" id="close-comments" type="submit">Show Me Another!</a>
+		</div>
 
 <?php get_footer(); ?>

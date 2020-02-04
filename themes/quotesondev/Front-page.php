@@ -8,7 +8,7 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="site-main home-page" role="main">
 
 		<?php if ( have_posts() ) : ?>
 			
@@ -28,16 +28,18 @@ get_header(); ?>
 				$posts = get_posts( $args ); // returns an array of posts
 				// output the random post
 				if ( have_posts() ) : the_post();
-					echo '<h1 class="entry-title">';
-					 the_title();
-					echo '</h1>';
-					echo '<div class="entry-content">';
+					
 					the_content();
-					echo '</div>';
+					
+					echo '<div class="entry-meta"><h2 class="entry-title">-';
+					the_title();
+					echo '</div></h2>';
 				endif;
 				// Reset Post Data
 				wp_reset_postdata();
 			?>
+
+
 
 
 </p>
@@ -49,5 +51,9 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+
+	<div>
+			<a class="principal" href="" type="button" id="close-comments" type="submit">Show Me Another!</a>
+		</div>
 
 <?php get_footer(); ?>

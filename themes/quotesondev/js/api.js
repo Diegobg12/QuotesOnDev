@@ -19,25 +19,29 @@
 
         // history.pushState(null, null, " ");
         history.pushState(null, null, slug);
+        var pathArray = window.location.pathname;
+        // let fistPath = pathArray[2];
+        // let secondPath = pathArray[3];
+        // if (secondPath != ""){
+        //   newUrl = window.location.pathname;
+        //   return theURL.replace("/url_part_to_change/", "/new_url_part/"); 
 
+        // };
+        console.log(pathArray);
         
-        console.log(data)
 
         if ( source == ""){
           $('.entry-title').text(author);
         }else{
           $('.entry-title').text(author+ ":" + source);
         }
-        
         $('.entry-content').html(content);
       
       });
     });
   })(jQuery);
 
-  var pathArray = window.location.pathname.split('/');
-  var secondLevelLocation = pathArray[2];
-  console.log(secondLevelLocation);
+  
 
 
   

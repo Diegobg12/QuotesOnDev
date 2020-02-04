@@ -18,16 +18,21 @@
 	</head>
 
 	<body <?php body_class(); ?>>
-		<div id="page" class="hfeed site">
+		<div id="page" class="hfeed site container">
 			<a class="skip-link screen-reader-text" href="#content"><?php echo esc_html( 'Skip to content' ); ?></a>
 
 			<header id="masthead" class="site-header" role="banner">
 				<div class="site-branding">
-					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				</div><!-- .site-branding -->
+					<div class ="logo">
+						<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+						<a href="http://localhost:8888/Project5" rel="home">
+							<img src="https://quotes.academy.red/wp-content/themes/quotesondev/images/qod-logo.svg" class="logo" alt="Quotes on Dev logo">
+						</a>
+					</div>
 
+				</div><!-- .site-branding -->
 			</header><!-- #masthead -->
 
 			
 
-			<div id="content" class="site-content">
+			<div id="content" class="site-content ">

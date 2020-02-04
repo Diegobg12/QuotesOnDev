@@ -9,20 +9,20 @@
 
 			</div><!-- #content -->
 
-			<div>
-				<a href="" type="button" id="close-comments">Get another random design quote</a>
-			</div>
+
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
+				<div class="site-info">
+					<div class="menu-main-navigation-container">
+						<?php wp_nav_menu( array( 'container'=> 'ul','theme_location' => 'primary', 'menu_id' => 'primary-menu', 'menu_class'=> 'footer-navigation' ) ); ?>
+					</div>
+					<p>Brought to you by <a href="http://www.redacademy.com/">RED Academy</a></p>
 
-						<nav id="site-navigation" class="main-navigation" role="navigation">
-								<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button>
-								<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-						</nav><!-- #site-navigation -->
+				</div>
 			</footer><!-- #colophon -->
+
 		</div><!-- #page -->
-		<script></script>
-		<script></script>
+
 		<?php wp_footer(); ?>
 
 
