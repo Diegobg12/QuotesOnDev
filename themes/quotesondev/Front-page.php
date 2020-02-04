@@ -7,8 +7,6 @@
 
 get_header(); ?>
 
-<i class="fa fa-quote-left hide" aria-hidden="true"></i>
-<i class="fa fa-quote-right hide right" aria-hidden="true"></i>
 
 
 	<div id="primary" class="content-area">
@@ -33,7 +31,7 @@ get_header(); ?>
 				// output the random post
 				if ( have_posts() ) : the_post();
 				?>
-				<div class="entry-content"><?php the_content()?></div>
+				<div class="entry-content quote-pages"><?php the_content()?></div>
 				<div class="entry-meta"><h2 class="entry-title"><?php the_title();?></h2></div>
 				<?php
 					endif;
@@ -53,7 +51,7 @@ get_header(); ?>
 
 		
 		<div class= buttom-container>
-			<a class="principal" href="" type="button" id="close-comments" type="submit">Show Me Another!</a>
+			<button class="principal" type="button" id="close-comments" type="submit">Show Me Another!</button>
 		</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->

@@ -37,3 +37,6 @@
 			
 
 			<div id="content" class="site-content ">
+			<i class="fa fa-quote-left hide" aria-hidden="true"></i>
+			<i class="fa fa-quote-right hide right" aria-hidden="true"></i>
+

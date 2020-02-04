@@ -19,6 +19,19 @@
     display: none;
 }
 
+
+
+// ARCHIVE--------
+.archive-container{
+
+    border-top: 1px solid $color__text-main;
+    border-bottom: 1px solid $color__text-main;
+}
+
+.archive-ma{
+    margin-top: 10%;
+}
+
 @media screen and (min-width: 620px){
 
 
@@ -42,7 +55,10 @@
     .logo img {
         width: 500px;
     }
-
+    input[type=search] {
+        width: 30%;
+        height: 50%;
+    }
 
 }
 
@@ -63,12 +79,10 @@
         margin: 0 auto;
     }
 
-    .entry-content{
-        p{
-            font-size: 2.5rem;
-        }
-
+    .quote-pages{
+        font-size: 2.5rem;
     }
+
     .entry-meta{
 
         .entry-title{
@@ -97,12 +111,16 @@
     }
 
 
-
     .site-content{
         margin: 4.5rem 175px 1.5rem;
         position: relative;
     }
+
+
 }
 
 
-
+.archive-title{
+    font-size: 1.5rem;
+    padding-top: 5% ;
+}
