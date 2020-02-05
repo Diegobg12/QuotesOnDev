@@ -23,7 +23,7 @@ This is an app to take random quotes from post content on WordPress.
   ##  SPECIAL FEATURES
   
   + Create an EndPoint to get the post from the DataBase.
-  + Create a `GET`request using Ajax to get the data without reloading the page.
+  + Create a `GET`request using Ajax to get the data without reload the page.
   + Create a `POST`request using Ajax to submit new quotes only if the user is log in.
   
  ## PLUGINS
