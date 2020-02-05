@@ -27,7 +27,7 @@
 					<div class ="logo">
 						<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 						<a href="http://localhost:8888/Project5" rel="home">
-							<img src="https://quotes.academy.red/wp-content/themes/quotesondev/images/qod-logo.svg" class="logo" alt="Quotes on Dev logo">
+							<img src= "<?php echo get_template_directory_uri();?>../../quotesondev/assets/qod-logo.svg" alt="">
 						</a>
 					</div>
 

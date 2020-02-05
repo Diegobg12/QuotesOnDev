@@ -17,7 +17,7 @@ if ( is_user_logged_in() ) {
 
     echo '<h1>Submit a Quote</h1>';
     echo '<p>Sorry, you must be logged in to submit a quote!!</p>';
-    echo '<a href="http://localhost:8888/Project5/wp-admin">Click here to login.</a>';
+    echo '<a href="/Project5/wp-admin">Click here to login.</a>';
 }
 ?>
 
