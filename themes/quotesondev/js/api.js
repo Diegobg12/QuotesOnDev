@@ -19,6 +19,7 @@
 
         history.pushState(null, null, slug);
 
+        
 
         if ( source === ''){
           $('.entry-title').text(author);
