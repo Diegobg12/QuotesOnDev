@@ -1,4 +1,4 @@
-# QUOTES PROJECT
+# QuotesOnDev
 
 This is an app to take random quotes from post content on WordPress.
 
