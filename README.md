@@ -1,12 +1,18 @@
 # QUOTES PROJECT
 
-Project nº5 of RED ACADEMY Web Developer program.
-
-## ABOUT
-
 This is an app to take random quotes from post content on WordPress.
 
-##  HOW TO RUN?
+## Development 
+
++ Download [Wordpress.org](https://wordpress.org/)
++ Create DataBase table on SQL to stored the data provided.
++ Migrate Quotes provided into the DataBase.
++ Style first based on the mobile versio, the scaleted using CSS queries. The quotes incon are only displayed on the desktop verion.
++ Create an AJAX GET request to get the Quotes on the front page. And select one random quote, without reload the page, every time the user click on the botton. This gives the user a better interaction.
++ Create an AJAX POST request to submit new quotes. This option is only avilable for registed users.
+
+
+##  How to run?
 
  + `git clone` this project on your `htdocs` folder on MAMP aplication.
  + On the project folder in your terminal install `npm install`. 
@@ -15,20 +21,34 @@ This is an app to take random quotes from post content on WordPress.
  + Open on your LocalHost and Log In with your user on Wordpress
  
 
-## DESIGN REQUIREMENTS
-  
-  + Design first for mobile version then adapt to Tablet and Desktop.
-  + The Quotes incons are showed only on desktop version.
-  
-  ##  SPECIAL FEATURES
-  
-  + Create an EndPoint to get the post from the DataBase.
-  + Create a `GET`request using Ajax to get the data without reload the page.
-  + Create a `POST`request using Ajax to submit new quotes only if the user is log in.
-  
- ## PLUGINS
+ 
+## Final Result
+
+### Phone version
+![alt text](mobile.png)
+
+### Tablet version
+![alt text](tablet.png)
+
+### Desktop version
+![alt text](desktop.png)
+
+
+ ## Plugins
+  + [wp-migrate-db](https://es.wordpress.org/plugins/wp-migrate-db/)
   + [Query Monitor](https://wordpress.org/plugins/query-monitor/)
-  + [Contact Form 7](https://wordpress.org/plugins/contact-form-7/)
+  + [Contact Form 7](https://wordpress.org/plugins/contact-form-7/): Form used to create new quotes.
   + [WP Migrate DB](https://wordpress.org/plugins/wp-migrate-db/)
+
+ 
+ ## Sourcer
+  + [PHP](https://www.php.net/docs.php)
+  + [Ajax for Wordpress](https://codex.wordpress.org/AJAX)
+  + [JavaScript Objects](https://www.w3schools.com/js/js_objects.asp)
+  + [NPM](https://www.npmjs.com)
+  + [Wordpress Documentation](https://developer.wordpress.org/)
+  + [Sass](https://sass-lang.com/)
+  + [GULP](https://gulpjs.com/)
+  + [JQUERY](https://jquery.com/)
 
   
